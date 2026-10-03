@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AZUR | فروشگاه لوازم خانگی</title>
+<meta name="description" content="فروش لوازم خانگی اصل و پلمپ - AZUR">
+<style>
+:root{--blue:#1976d2;--blue2:#0d63b5;--green:#16a05d;--red:#e53935;--text:#202124;--muted:#777;--line:#e7e7e7;--bg:#f5f5f5;--card:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Tahoma,Arial,sans-serif}
+a{text-decoration:none;color:inherit}button,input,select{font:inherit}.top{background:#202124;color:#fff;text-align:center;padding:8px;font-size:12px}
+header{background:#fff;position:sticky;top:0;z-index:30;border-bottom:1px solid var(--line);box-shadow:0 2px 10px #00000008}
+.head{max-width:1250px;margin:auto;padding:13px 18px;display:flex;align-items:center;gap:18px}.logo{font-size:29px;font-weight:900;letter-spacing:3px;white-space:nowrap}
+.search{flex:1;position:relative}.search input{width:100%;height:46px;border:1px solid #ddd;border-radius:10px;background:#fafafa;padding:0 45px 0 14px;outline:none}.search input:focus{border-color:var(--blue);background:#fff}.search i{position:absolute;right:15px;top:12px;font-style:normal;font-size:20px;color:#777}
+.headlink{font-size:13px;white-space:nowrap}.headlink strong{display:block;font-size:11px;color:#888;margin-bottom:3px}
+nav{border-top:1px solid #f1f1f1}.nav{max-width:1250px;margin:auto;padding:11px 18px;display:flex;gap:25px;font-size:13px}.nav a:hover{color:var(--blue)}
+.wrap{max-width:1250px;margin:20px auto;padding:0 18px}
+.breadcrumb{font-size:12px;color:#777;margin:15px 0}.breadcrumb b{color:#333}
+.hero{background:linear-gradient(110deg,#102a43,#1976d2);color:#fff;border-radius:14px;padding:32px 38px;display:flex;justify-content:space-between;align-items:center;overflow:hidden}.hero h1{font-size:30px;margin:0 0 10px}.hero p{margin:0;color:#e9f3ff;line-height:2;font-size:13px}.hero .badge{background:#fff;color:#1261a7;padding:9px 13px;border-radius:8px;font-weight:bold;font-size:12px;white-space:nowrap}
+.section{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-top:18px}.sectionTitle{padding:18px 20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}.sectionTitle h2{font-size:18px;margin:0}.sectionTitle span{font-size:11px;color:#888}
+.brands{display:grid;grid-template-columns:repeat(6,1fr);padding:14px;gap:10px}.brand{background:#fafafa;border:1px solid #eee;border-radius:9px;padding:15px;text-align:center;font-weight:bold;font-size:13px;cursor:pointer}.brand:hover,.brand.active{border-color:#b9d9f7;background:#eef7ff;color:var(--blue)}
+.layout{display:grid;grid-template-columns:220px 1fr;gap:15px;margin-top:18px}.sidebar{background:#fff;border:1px solid var(--line);border-radius:12px;height:max-content}.sideTitle{padding:15px;font-weight:bold;border-bottom:1px solid var(--line);font-size:14px}.filter{padding:14px;border-bottom:1px solid #eee}.filter label{display:block;font-size:12px;margin:8px 0;cursor:pointer}.filter input{margin-left:7px;vertical-align:middle}.clear{border:0;background:#fff;color:var(--red);font-size:11px;cursor:pointer;padding:0}
+.toolbar{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;gap:10px}.count{font-size:12px;color:#777}.sort{border:1px solid #ddd;border-radius:8px;padding:8px;background:#fff;font-size:12px}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:12px}.product{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;position:relative;transition:.18s}.product:hover{box-shadow:0 8px 25px #00000010;transform:translateY(-2px)}.fav{position:absolute;left:10px;top:10px;width:30px;height:30px;border:1px solid #ddd;background:#fff;border-radius:50%;cursor:pointer;z-index:2}.photo{height:205px;background:#fff;display:flex;align-items:center;justify-content:center;padding:15px;border-bottom:1px solid #f0f0f0}.photo img{width:100%;height:100%;object-fit:contain}.info{padding:13px}.brandname{font-size:10px;color:#888}.product h3{font-size:13px;line-height:1.8;margin:6px 0;min-height:47px}.stars{color:#f6a700;font-size:11px}.rating{color:#888;margin-right:5px}.price{font-size:15px;font-weight:bold;margin:10px 0 4px}.price small{font-size:10px;font-weight:normal;color:#777}.availability{font-size:10px;color:var(--green);margin-bottom:10px}.actions{display:flex;gap:7px}.buy{flex:1;border:0;background:var(--blue);color:#fff;border-radius:8px;padding:9px;font-size:11px;cursor:pointer}.details{border:1px solid #ddd;background:#fff;border-radius:8px;padding:9px;font-size:11px;cursor:pointer}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:18px}.feature{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px}.feature b{display:block;margin-bottom:8px}.feature span{font-size:11px;color:#777;line-height:1.8}
+footer{margin-top:35px;background:#202124;color:#bbb;padding:35px 20px}.foot{max-width:1250px;margin:auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}.foot h3{color:#fff;font-size:16px}.foot p{font-size:11px;line-height:2}.copy{text-align:center;border-top:1px solid #444;margin-top:25px;padding-top:18px;font-size:10px}
+.modalBg{display:none;position:fixed;inset:0;background:#0008;z-index:100;align-items:center;justify-content:center;padding:20px}.modalBg.show{display:flex}.modal{background:#fff;border-radius:15px;max-width:780px;width:100%;max-height:90vh;overflow:auto;padding:20px}.close{float:left;border:0;background:#eee;border-radius:8px;padding:7px 12px;cursor:pointer}.modalGrid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.modalImg{height:330px}.modalImg img{width:100%;height:100%;object-fit:contain}.modal h2{font-size:20px}.spec{border-top:1px solid #eee;margin-top:15px;padding-top:15px;font-size:12px;line-height:2}
+.toast{position:fixed;bottom:20px;right:20px;background:#202124;color:#fff;padding:12px 16px;border-radius:9px;font-size:12px;display:none;z-index:200}.toast.show{display:block}
+@media(max-width:1000px){.products{grid-template-columns:repeat(3,1fr)}.brands{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:750px){.layout{grid-template-columns:1fr}.sidebar{display:none}.products{grid-template-columns:repeat(2,1fr)}.features{grid-template-columns:repeat(2,1fr)}.headlink{display:none}.hero{padding:25px}.hero h1{font-size:23px}.modalGrid{grid-template-columns:1fr}.modalImg{height:230px}}
+@media(max-width:450px){.products{grid-template-columns:1fr 1fr;gap:8px}.photo{height:155px}.info{padding:10px}.product h3{font-size:12px}.brands{grid-template-columns:repeat(2,1fr)}.features{grid-template-columns:1fr}.nav{overflow:auto;white-space:nowrap}.logo{font-size:24px}}
+</style>
+</head>
+<body>
+<div class="top">فروشگاه AZUR • کالا اصل و پلمپ • ارسال به سراسر کشور • خرید حضوری</div>
+<header>
+<div class="head">
+<a class="logo" href="#">AZUR</a>
+<div class="search"><i>⌕</i><input id="q" placeholder="جستجو بین نام محصول، برند یا مدل..." oninput="render()"></div>
+<a class="headlink" href="https://instagram.com/azurcenter_online" target="_blank"><strong>اینستاگرام</strong>azurcenter_online</a>
+</div>
+<nav><div class="nav"><a href="#shop">فروشگاه</a><a href="#brands">برندها</a><a href="#why">مزایای خرید</a><a href="#about">درباره AZUR</a><a href="#contact">تماس با ما</a></div></nav>
+</header>
+
+<main class="wrap">
+<div class="breadcrumb">خانه ← <b>فروشگاه</b></div>
+<section class="hero">
+<div><h1>خرید لوازم خانگی با مقایسه آسان</h1><p>مدل، قیمت و مشخصات را ببینید و برای موجودی روز با AZUR تماس بگیرید.</p></div>
+<div class="badge">تضمین اصالت کالا</div>
+</section>
+
+<section class="section" id="brands">
+<div class="sectionTitle"><h2>انتخاب برند</h2><span>برند موردنظر را انتخاب کنید</span></div>
+<div class="brands">
+<div class="brand active" onclick="setBrand('')">همه</div><div class="brand" onclick="setBrand('Philips')">Philips</div><div class="brand" onclick="setBrand('Ninja')">Ninja</div><div class="brand" onclick="setBrand('DeLonghi')">DeLonghi</div><div class="brand" onclick="setBrand('LG')">LG</div><div class="brand" onclick="setBrand('Bosch')">Bosch</div>
+</div></section>
+
+<div class="layout" id="shop">
+<aside class="sidebar">
+<div class="sideTitle">فیلتر محصولات</div>
+<div class="filter"><b>دسته‌بندی</b>
+<label><input type="checkbox" value="سرخ‌کن" onchange="setCatFromChecks()"> سرخ‌کن</label>
+<label><input type="checkbox" value="جاروبرقی" onchange="setCatFromChecks()"> جاروبرقی</label>
+<label><input type="checkbox" value="اسپرسوساز" onchange="setCatFromChecks()"> اسپرسوساز</label>
+<label><input type="checkbox" value="مایکروویو" onchange="setCatFromChecks()"> مایکروویو</label>
+</div>
+<div class="filter"><button class="clear" onclick="clearFilters()">پاک کردن فیلترها</button></div>
+</aside>
+<section>
+<div class="toolbar"><span class="count" id="count"></span><select class="sort" id="sort" onchange="render()"><option value="default">مرتب‌سازی پیش‌فرض</option><option value="priceUp">ارزان‌ترین</option><option value="priceDown">گران‌ترین</option><option value="name">نام محصول</option></select></div>
+<div class="products" id="grid"></div>
+</section>
+</div>
+
+<section id="why" class="features">
+<div class="feature">✓<b>تضمین اصالت</b><span>کالاهای عرضه‌شده اصل و پلمپ هستند.</span></div>
+<div class="feature">✓<b>فاکتور معتبر</b><span>ارائه فاکتور معتبر با مهر فروشگاه.</span></div>
+<div class="feature">✓<b>ارسال سراسر کشور</b><span>امکان ارسال سفارش به شهرهای مختلف.</span></div>
+<div class="feature">✓<b>خرید حضوری</b><span>امکان خرید حضوری از فروشگاه AZUR.</span></div>
+</section>
+
+<section id="about" class="section" style="padding:25px;margin-top:18px"><h2 style="font-size:18px">درباره فروشگاه AZUR</h2><p style="font-size:12px;line-height:2;color:#666">گچین بالا، بازار قدیم، پاساژ حسن، پلاک یک، فروشگاه AZUR. برای قیمت و موجودی روز محصولات، مدل موردنظر را انتخاب و استعلام کنید.</p></section>
+<section id="contact" class="section" style="padding:25px;margin-top:18px"><h2 style="font-size:18px">ارتباط با فروشگاه</h2><p style="font-size:12px;line-height:2;color:#666">📍 گچین بالا، بازار قدیم، پاساژ حسن، پلاک یک<br>📱 Instagram: azurcenter_online</p><a class="buy" style="display:inline-block;width:auto;padding:11px 25px" href="https://instagram.com/azurcenter_online" target="_blank">پیام در اینستاگرام</a></section>
+</main>
+
+<footer><div class="foot"><div><h3>AZUR</h3><p>فروشگاه لوازم خانگی اصل و پلمپ. استعلام قیمت روز، خرید حضوری و ارسال به سراسر کشور.</p></div><div><h3>دسترسی سریع</h3><p>محصولات<br>برندها<br>مزایای خرید</p></div><div><h3>اطلاعات فروشگاه</h3><p>فروش نقدی<br>فاکتور معتبر<br>تضمین اصالت کالا</p></div></div><div class="copy">© AZUR — فروشگاه لوازم خانگی</div></footer>
+
+<div class="modalBg" id="modalBg" onclick="if(event.target===this)closeModal()"><div class="modal"><button class="close" onclick="closeModal()">بستن</button><div id="modalContent"></div></div></div>
+<div class="toast" id="toast">به علاقه‌مندی‌ها اضافه شد</div>
+
+<script>
+const products=[
+{id:1,name:'سرخ‌کن دو سبد Philips NA350/00',brand:'Philips',cat:'سرخ‌کن',price:23200000,rating:'4.8',img:'https://images.philips.com/is/image/philipsconsumer/vrs_6272c9f09b661931e17112931a2bf904d3227b2b?%24png%24=&fit=constrain&hei=410&wid=410',spec:'ظرفیت 9 لیتر • دو سبد • نمایشگر لمسی • 8 برنامه'},
+{id:2,name:'سرخ‌کن Ninja AF500',brand:'Ninja',cat:'سرخ‌کن',price:38500000,rating:'4.8',img:'https://www.dateks.lv/images/pic/2400/2400/654/1592.jpg',spec:'ظرفیت 10.4 لیتر • DualZone/FlexDrawer • 7 عملکرد'},
+{id:3,name:'اسپرسوساز DeLonghi EC685',brand:'DeLonghi',cat:'اسپرسوساز',price:22400000,rating:'4.7',img:'https://ee.ge/_next/image?q=75&url=https%3A%2F%2Fstatic.ee.ge%2FElite%2F37d6919a-a4fc-45a5-9ac9-cd6d82545be1_Thumb.jpeg&w=1640',spec:'15 بار • مخزن 1.1 لیتر • توان 1300 وات • نازل بخار'},
+{id:4,name:'مایکروویو LG MH8265CIS',brand:'LG',cat:'مایکروویو',price:28500000,rating:'4.6',img:'https://2b.com.eg/pub/media/catalog/product/h/a/ha984-000000-min.jpg',spec:'ظرفیت 42 لیتر • Smart Inverter • Grill • EasyClean'},
+{id:5,name:'جاروبرقی Philips 8022',brand:'Philips',cat:'جاروبرقی',price:25300000,rating:'4.6',img:'https://images.philips.com/is/image/PhilipsConsumer/FC9170_01-IMS-en_SG?$jpglarge$&wid=700&hei=700',spec:'مدل 8022 • استعلام موجودی و رنگ'},
+{id:6,name:'جاروبرقی Philips 8052',brand:'Philips',cat:'جاروبرقی',price:28600000,rating:'4.6',img:'https://images.philips.com/is/image/PhilipsConsumer/FC9170_01-IMS-en_SG?$jpglarge$&wid=700&hei=700',spec:'مدل 8052 • استعلام موجودی و رنگ'},
+{id:7,name:'اسپرسوساز DeLonghi EC890',brand:'DeLonghi',cat:'اسپرسوساز',price:31500000,rating:'4.7',img:'https://ee.ge/_next/image?q=75&url=https%3A%2F%2Fstatic.ee.ge%2FElite%2F37d6919a-a4fc-45a5-9ac9-cd6d82545be1_Thumb.jpeg&w=1640',spec:'مدل EC890 • مشخصات و موجودی روز را استعلام کنید'},
+{id:8,name:'مایکروویو LG 8295',brand:'LG',cat:'مایکروویو',price:34000000,rating:'4.6',img:'https://2b.com.eg/pub/media/catalog/product/h/a/ha984-000000-min.jpg',spec:'مدل 8295 • مشخصات و موجودی روز را استعلام کنید'},
+{id:9,name:'سرخ‌کن Philips NA342',brand:'Philips',cat:'سرخ‌کن',price:27000000,rating:'4.7',img:'https://images.philips.com/is/image/philipsconsumer/vrs_6272c9f09b661931e17112931a2bf904d3227b2b?%24png%24=&fit=constrain&hei=410&wid=410',spec:'مدل NA342 • استعلام موجودی و قیمت روز'},
+{id:10,name:'جاروبرقی Bosch BGL8PRO5',brand:'Bosch',cat:'جاروبرقی',price:25000000,rating:'4.7',img:'https://images.philips.com/is/image/PhilipsConsumer/FC9170_01-IMS-en_SG?$jpglarge$&wid=700&hei=700',spec:'مدل BGL8PRO5 • تصویر نمایشی؛ عکس مدل دقیق را هنگام درج محصول جایگزین کنید'}
+];
+let brand='',cats=[];
+const toman=n=>n?new Intl.NumberFormat('fa-IR').format(n/1000000)+' میلیون تومان':'استعلام قیمت';
+function setBrand(b){brand=b;document.querySelectorAll('.brand').forEach(x=>x.classList.toggle('active',x.textContent.trim()===(b||'همه')));render()}
+function setCatFromChecks(){cats=[...document.querySelectorAll('.filter input:checked')].map(x=>x.value);render()}
+function clearFilters(){brand='';cats=[];document.querySelectorAll('.filter input').forEach(x=>x.checked=false);document.getElementById('q').value='';setBrand('')}
+function render(){
+let q=document.getElementById('q').value.trim().toLowerCase();
+let list=products.filter(p=>(!brand||p.brand===brand)&&(!cats.length||cats.includes(p.cat))&&(!q||(p.name+' '+p.brand+' '+p.cat).toLowerCase().includes(q)));
+const s=document.getElementById('sort').value;
+if(s==='priceUp')list.sort((a,b)=>a.price-b.price);if(s==='priceDown')list.sort((a,b)=>b.price-a.price);if(s==='name')list.sort((a,b)=>a.name.localeCompare(b.name));
+document.getElementById('count').textContent='نمایش '+list.length+' محصول';
+document.getElementById('grid').innerHTML=list.map(p=>`<article class="product"><button class="fav" onclick="fav(event,${p.id})">♡</button><div class="photo"><img loading="lazy" src="${p.img}" alt="${p.name}" onerror="this.style.display='none';this.parentElement.innerHTML='<span style=&quot;font-size:50px&quot;>🛍️</span>'"></div><div class="info"><div class="brandname">${p.brand}</div><h3>${p.name}</h3><div class="stars">★★★★★ <span class="rating">${p.rating}</span></div><div class="price">${toman(p.price)}</div><div class="availability">● موجودی را استعلام کنید</div><div class="actions"><button class="buy" onclick="buy(${p.id})">استعلام و خرید</button><button class="details" onclick="details(${p.id})">جزئیات</button></div></div></article>`).join('');
+}
+function fav(e,id){e.stopPropagation();e.target.textContent='♥';document.getElementById('toast').classList.add('show');setTimeout(()=>document.getElementById('toast').classList.remove('show'),1300)}
+function buy(id){const p=products.find(x=>x.id===id);const msg=encodeURIComponent('سلام، برای خرید/استعلام موجودی '+p.name+' پیام دادم.');window.open('https://instagram.com/azurcenter_online?text='+msg,'_blank')}
+function details(id){const p=products.find(x=>x.id===id);document.getElementById('modalContent').innerHTML=`<div class="modalGrid"><div class="modalImg"><img src="${p.img}" alt="${p.name}"></div><div><div style="color:#888;font-size:11px">${p.brand}</div><h2>${p.name}</h2><div class="stars">★★★★★ <span class="rating">${p.rating}</span></div><div class="price">${toman(p.price)}</div><div class="availability">● موجودی و قیمت نهایی را استعلام کنید</div><div class="spec"><b>مشخصات:</b><br>${p.spec}</div><br><button class="buy" style="width:100%" onclick="buy(${p.id})">استعلام و خرید از AZUR</button></div></div>`;document.getElementById('modalBg').classList.add('show')}
+function closeModal(){document.getElementById('modalBg').classList.remove('show')}
+render();
+</script>
+</body>
+</html>
